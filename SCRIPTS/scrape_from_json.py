@@ -48,7 +48,7 @@ def main():
     #all_post['selftext'] = all_post['text'].str.replace('[^a-zA-Z0-9\s]', '', regex=True)
     #all_post['title'] = all_post['title'].str.replace('[^a-zA-Z0-9\s]', '', regex=True)
 
-    all_post['text'] = all_post['title'] + '' + all_post['selftext']
+    all_post['text'] = all_post['title'] + ' ' + all_post['selftext']
     all_comment = all_comment.dropna(subset=['text'])
     all_post = all_post.dropna(subset=['text'])
 
