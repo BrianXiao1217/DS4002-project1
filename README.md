@@ -16,6 +16,7 @@ Within our main project folder, we have 3 folders:
 ### Scripts Folder
 * scrape_from_json.py
 	* Where we take the original JSON file and parse through it to create 3 CSVs:
+	* not sure if you have to describe every file?
 ### Data Folder
 * all_comments.csv
 * all_posts.csv

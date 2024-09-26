@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def filter_post(filename):
+    '''
+    Extracts data from json file, keeping desired columns
+    '''
     raw_json = pd.read_json(path_or_buf=filename+".jsonl", lines=True, encoding="utf-8-sig")
     selected_data = ['selftext', 'created_utc', 'ups', 'subreddit', 'link_flair_text','title']
         #selftext       - main body text
@@ -43,10 +46,6 @@ def main():
 
     all_comment = all_comment[all_comment['text'] != '[removed]']
     all_post.loc[all_post['selftext'] == '[removed]', 'selftext'] = ''
-    
-    #all_comment['text'] = all_comment['text'].str.replace('[^a-zA-Z0-9\s]', '', regex=True)
-    #all_post['selftext'] = all_post['text'].str.replace('[^a-zA-Z0-9\s]', '', regex=True)
-    #all_post['title'] = all_post['title'].str.replace('[^a-zA-Z0-9\s]', '', regex=True)
 
     all_post['text'] = all_post['title'] + ' ' + all_post['selftext']
     all_comment = all_comment.dropna(subset=['text'])
