@@ -56,3 +56,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+testing_filtercomments = filter_comment("../DATA/r_Republican_comments")
+
+print(testing_filtercomments)
+
