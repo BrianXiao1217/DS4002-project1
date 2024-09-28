@@ -3,20 +3,14 @@ Brian Xiao, Elaine Shagdarjav, Jason Albanese
 ## Section 1: Software and Platform
 * In order to obtain data, we used Arctic Shift (https://github.com/ArthurHeitmann/arctic_shift) to scrape data from Reddit. This generated a JSON file in which we cleaned and turned into a CSV with Python.
 * The CSV was then opened with Python to use the VADER Sentiment Analysis package.
-* Additionally, we used the pandas package in Python.
-* Windows ?
+* Additionally, we used the pandas, matplotlib, seaborn, nltk, and vaderSentiment in Python.
+* Windows and Mac were used to run the software.
 
-Rubric:
-- The type(s) of software you used for the project.
--The names of any add-on packages that need to be installed
-with the software.
--The platform (e.g., Windows, Mac, or Linux) you used
 ## Section 2: Documentation Map
 Within our main project folder, we have 3 folders:
 ### Scripts Folder
+* plot_ipynb
 * scrape_from_json.py
-	* Where we take the original JSON file and parse through it to create 3 CSVs:
-	* not sure if you have to describe every file?
 ### Data Folder
 * all_comments.csv
 * all_posts.csv
@@ -28,20 +22,18 @@ Within our main project folder, we have 3 folders:
 * r_Republican_posts.jsonl
 * r_democrats_comments.jsonl
 * r_democrats_posts.jsonl
-
-
 ### Output Folder
-
-Rubric:
-- In this section, you should provide an outline or tree illustrating the
-hierarchy of folders and subfolders contained in your Project Folder,
-and listing the files stored in each folder or subfolder.
+* posts_scored.png
+* comments_scored.png
+* posts_with_biden.png
+* comments_with_biden.png
 ## Section 3: Instructions
-
-Rubric: 
-In this section, you should give explicit step-by-step instructions to
-reproduce the Results of your study. These instructions should be
-written in straightforward plain English, but they must be concise, but
-detailed and precise enough, to make it possible for an interested user
-to reproduce your results without much difficulty
-
+1. Clone this repo.
+2. Download the following libraries/packages if you do not have them already *(pip install [library])*:
+	* pandas
+	* matplotlib
+	* seaborn
+	* nltk
+	* vaderSentiment
+		* If you are on Mac, you might run into an issue with certifications. Run this in terminal: bash '/Applications/Python 3.6/Install Certificates.command'
+3. Run *plot.ipynb* 
