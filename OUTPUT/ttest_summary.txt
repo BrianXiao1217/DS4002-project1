@@ -1,0 +1,11 @@
+Comparing the average compound sentiment before and after Biden announced he was dropping out.
+
+POSTS:
+democrats subreddit: T-statistic: -0.18769776861679455, P-value: 0.8512097164028811
+Republican subreddit: T-statistic: 0.4576751932220733, P-value: 0.6476235706301625
+PoliticalDiscussion subreddit: T-statistic: -1.5855714800727285, P-value: 0.11424095694942944
+
+COMMENTS:
+democrats subreddit: T-statistic: 5.262430303507806, P-value: 1.5580719024135326e-07
+Republican subreddit: T-statistic: -0.49501670298273087, P-value: 0.6207061448726928
+PoliticalDiscussion subreddit: T-statistic: 4.976674121177761, P-value: 6.633847775331306e-07
